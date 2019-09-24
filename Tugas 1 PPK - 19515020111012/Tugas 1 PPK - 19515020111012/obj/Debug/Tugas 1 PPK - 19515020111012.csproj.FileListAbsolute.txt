@@ -1,0 +1,9 @@
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\bin\Debug\Tugas 1 PPK - 19515020111012.exe.config
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\bin\Debug\Tugas 1 PPK - 19515020111012.exe
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\bin\Debug\Tugas 1 PPK - 19515020111012.pdb
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\obj\Debug\Tugas 1 PPK - 19515020111012.csprojResolveAssemblyReference.cache
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\obj\Debug\Tugas_1_PPK___19515020111012.Form1.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\obj\Debug\Tugas_1_PPK___19515020111012.Properties.Resources.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\obj\Debug\Tugas 1 PPK - 19515020111012.csproj.GenerateResource.Cache
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\obj\Debug\Tugas 1 PPK - 19515020111012.exe
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas 1 PPK - 19515020111012\Tugas 1 PPK - 19515020111012\obj\Debug\Tugas 1 PPK - 19515020111012.pdb

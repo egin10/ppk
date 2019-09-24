@@ -1,0 +1,16 @@
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\bin\Debug\Tugas_1_195150209111012.exe.config
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\bin\Debug\Tugas_1_195150209111012.exe
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\bin\Debug\Tugas_1_195150209111012.pdb
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.csprojResolveAssemblyReference.cache
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Form1.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Properties.Resources.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.csproj.GenerateResource.Cache
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.exe
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.pdb
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Form2.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Form3.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Form4.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Form5.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Form6.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Form7.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Tugas_1_195150209111012\Tugas_1_195150209111012\obj\Debug\Tugas_1_195150209111012.Form8.resources

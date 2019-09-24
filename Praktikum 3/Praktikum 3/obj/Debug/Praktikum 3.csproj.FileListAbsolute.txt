@@ -1,0 +1,10 @@
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\bin\Debug\Praktikum 3.exe.config
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\bin\Debug\Praktikum 3.exe
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\bin\Debug\Praktikum 3.pdb
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\obj\Debug\Praktikum 3.csprojResolveAssemblyReference.cache
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\obj\Debug\Praktikum_3.Form1.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\obj\Debug\Praktikum_3.FormPict.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\obj\Debug\Praktikum_3.Properties.Resources.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\obj\Debug\Praktikum 3.csproj.GenerateResource.Cache
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\obj\Debug\Praktikum 3.exe
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 3\Praktikum 3\obj\Debug\Praktikum 3.pdb

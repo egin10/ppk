@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Tugas_1_195150209111012
+{
+    public partial class Form7 : Form
+    {
+        public Form7()
+        {
+            InitializeComponent();
+        }
+
+        private void btnGantiFont_Click(object sender, EventArgs e)
+        {
+            DialogResult pilihan = dlgFont.ShowDialog();
+            if (pilihan == DialogResult.OK)
+            {
+                lblInfo.Font = dlgFont.Font;
+                lblInfo.ForeColor = dlgFont.Color;
+            }
+        }
+    }
+}

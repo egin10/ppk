@@ -1,0 +1,11 @@
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\bin\Debug\SDI MDI.exe.config
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\bin\Debug\SDI MDI.exe
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\bin\Debug\SDI MDI.pdb
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\obj\Debug\SDI MDI.csprojResolveAssemblyReference.cache
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\obj\Debug\SDI_MDI.Form1.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\obj\Debug\SDI_MDI.Form2.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\obj\Debug\SDI_MDI.Form3.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\obj\Debug\SDI_MDI.Properties.Resources.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\obj\Debug\SDI MDI.csproj.GenerateResource.Cache
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\obj\Debug\SDI MDI.exe
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\SDI MDI\SDI MDI\obj\Debug\SDI MDI.pdb
