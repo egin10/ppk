@@ -185,14 +185,13 @@ namespace Praktikum_4
         private void button1_Click(object sender, EventArgs e)
         {
             listBuku.Items.Clear();
-            string query = "SELECT * FROM data_buku WHERE judul LIKE '%@s%'";
+            string query = "SELECT * FROM data_buku WHERE judul LIKE '%"+ text_search.Text +"%' OR pengarang LIKE '%"+ text_search.Text +"%'";
             try
             {
                 // Open the database
                 databaseConnection.Open();
                 MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
                 cmd.CommandTimeout = 60;
-                cmd.Parameters.AddWithValue("@s", text_search.Text);
                 //cmd.Parameters.AddWithValue("@s", text_search.Text);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 // IMPORTANT :
