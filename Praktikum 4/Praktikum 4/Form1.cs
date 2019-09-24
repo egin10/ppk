@@ -54,6 +54,7 @@ namespace Praktikum_4
         {
             this.getData();
             this.cleanForm();
+            text_search.Text = "";
         }
 
         private void button_Hapus_Click(object sender, EventArgs e)
