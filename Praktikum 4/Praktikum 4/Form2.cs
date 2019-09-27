@@ -77,6 +77,7 @@ namespace Praktikum_4
                         listView2.Items.Clear();
                         listView2.Columns.Clear();
                         listView2.Columns.Add("No");
+                        listView2.Columns.Add("ID");
                         listView2.Columns.Add("Judul");
                         listView2.Columns.Add("Pengarang");
                         listView2.Columns.Add("Jumlah");
@@ -86,11 +87,11 @@ namespace Praktikum_4
                         {
                             ListViewItem listViewItem2 = new
                             ListViewItem(n.ToString());
+                            listViewItem2.SubItems.Add(reader["id_buku"].ToString());
                             listViewItem2.SubItems.Add(reader["judul"].ToString());
                             listViewItem2.SubItems.Add(reader["pengarang"].ToString());
                             listViewItem2.SubItems.Add(reader["jumlah"].ToString());
                             listView2.Items.Add(listViewItem2);
-                            this.id_buku = reader["id_buku"].ToString();
                             n++;
                         }
                     }
@@ -137,9 +138,10 @@ namespace Praktikum_4
             if (listView2.SelectedItems.Count > 0)
             {
                 item2 = listView2.SelectedItems[0];
-                txtJudul.Text = item2.SubItems[1].Text;
-                txtPengarang.Text = item2.SubItems[2].Text;
-                txtJumlah.Text = item2.SubItems[3].Text;
+                this.id_buku = item2.SubItems[1].Text;
+                txtJudul.Text = item2.SubItems[2].Text;
+                txtPengarang.Text = item2.SubItems[3].Text;
+                txtJumlah.Text = item2.SubItems[4].Text;
             }
             else
             {
@@ -151,8 +153,55 @@ namespace Praktikum_4
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            String msg = "NIM : " + txtNIM.Text + "\nID BUKU : " + id_buku + "\nDate : " + datePinjam.Value.Date.ToString("yyyy-MM-dd") + " s/d " + dateKembali.Value.Date.ToString("yyyy-MM-dd") + "\nJumlah Buku yang dipinjam : " + txtJmlPinjam.Text ;
+            String msg = "NIM : " + txtNIM.Text + "\nID BUKU : " + this.id_buku + "\nDate : " + datePinjam.Value.Date.ToString("yyyy-MM-dd") + " s/d " + dateKembali.Value.Date.ToString("yyyy-MM-dd") + "\nJumlah Buku yang dipinjam : " + txtJmlPinjam.Text ;
             MessageBox.Show(msg);
+
+            string query = "INSERT INTO data_pinjaman (id_buku, nim_mhs, tgl_pinjam, tgl_kembali, jumlah) VALUES (@id_buku, @nim_mhs, @tgl_pinjam, @tgl_kembali, @jumlah)";
+            try
+            {
+                // Open the database
+                databaseConnection.Open();
+                MySqlCommand cmd = new MySqlCommand(query, databaseConnection);
+                cmd.CommandTimeout = 60;
+                cmd.Parameters.AddWithValue("@id_buku", this.id_buku);
+                cmd.Parameters.AddWithValue("@nim_mhs", txtNIM.Text);
+                cmd.Parameters.AddWithValue("@tgl_pinjam", datePinjam.Value.Date.ToString("yyyy-MM-dd"));
+                cmd.Parameters.AddWithValue("@tgl_kembali", dateKembali.Value.Date.ToString("yyyy-MM-dd"));
+                cmd.Parameters.AddWithValue("@jumlah", txtJmlPinjam.Text);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data berhasil ditambahkan");
+            }
+            catch (Exception ex)
+            {
+                // Show any error message.
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                string update = "UPDATE data_buku SET jumlah = (jumlah - @jml_pinjam) WHERE id_buku = @id_buku";
+                //Decrement
+                MySqlCommand cmd = new MySqlCommand(update, databaseConnection);
+                cmd.CommandTimeout = 60;
+                cmd.Parameters.AddWithValue("@id_buku", this.id_buku);
+                cmd.Parameters.AddWithValue("@jml_pinjam", Convert.ToInt32(txtJmlPinjam.Text));
+                cmd.ExecuteNonQuery();
+
+                databaseConnection.Close();
+                this.getData("mhs");
+                this.getData("data_buku");
+                this.cleanForm();
+            }
+        }
+
+        private void cleanForm()
+        {
+            txtNIM.Text = txtNama.Text = txtFakultas.Text = txtJudul.Text = txtPengarang.Text = txtJumlah.Text = txtJmlPinjam.Text = "";
+            btnSave.Enabled = false;
+        }
+
+        private void txtJmlPinjam_TextChanged(object sender, EventArgs e)
+        {
+            btnSave.Enabled = true;
         }
     }
 }

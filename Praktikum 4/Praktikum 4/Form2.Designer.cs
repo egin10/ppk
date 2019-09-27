@@ -68,7 +68,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 26);
             this.label1.TabIndex = 0;
@@ -157,7 +157,7 @@
             this.btnSrcMhs.Name = "btnSrcMhs";
             this.btnSrcMhs.Size = new System.Drawing.Size(75, 23);
             this.btnSrcMhs.TabIndex = 10;
-            this.btnSrcMhs.Text = "Check";
+            this.btnSrcMhs.Text = "Tampilkan";
             this.btnSrcMhs.UseVisualStyleBackColor = true;
             this.btnSrcMhs.Click += new System.EventHandler(this.btnSrcMhs_Click);
             // 
@@ -207,7 +207,7 @@
             this.btnSrcBuku.Name = "btnSrcBuku";
             this.btnSrcBuku.Size = new System.Drawing.Size(75, 23);
             this.btnSrcBuku.TabIndex = 11;
-            this.btnSrcBuku.Text = "Check";
+            this.btnSrcBuku.Text = "Tampilkan";
             this.btnSrcBuku.UseVisualStyleBackColor = true;
             this.btnSrcBuku.Click += new System.EventHandler(this.btnSrcBuku_Click);
             // 
@@ -301,9 +301,11 @@
             this.txtJmlPinjam.Name = "txtJmlPinjam";
             this.txtJmlPinjam.Size = new System.Drawing.Size(135, 20);
             this.txtJmlPinjam.TabIndex = 13;
+            this.txtJmlPinjam.TextChanged += new System.EventHandler(this.txtJmlPinjam_TextChanged);
             // 
             // btnSave
             // 
+            this.btnSave.Enabled = false;
             this.btnSave.Location = new System.Drawing.Point(460, 107);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
