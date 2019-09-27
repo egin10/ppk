@@ -13,3 +13,4 @@ D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Prakt
 D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 4\Praktikum 4\obj\Debug\Praktikum 4.exe
 D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 4\Praktikum 4\obj\Debug\Praktikum 4.pdb
 D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 4\Praktikum 4\obj\Debug\Praktikum_4.Form2.resources
+D:\Univ Brawijaya\Semester 5\Pemrograman Platform Khusus\Praktikum\Program\Praktikum 4\Praktikum 4\obj\Debug\Praktikum_4.Form3.resources

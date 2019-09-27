@@ -1,0 +1,18 @@
+data_buku :
+	- id_buku : varchar(12) (primary)
+	- judul : varchar(255)
+	- pengarang : varchar(255)
+	- jumlah : int (11)
+
+data_pinjaman :
+	- id : int(11) (primary) AI
+	- id_buku : varchar(12) FK_data_buku
+	- nim_mhs : varchar(20) FK_mhs
+	- tgl_pinjam : date
+	- tgl_kembali : date
+	- jumlah : int(11)
+
+mhs :
+	- nim : varchar(20) (primary)
+	- nama : varchar(50)
+	- fakultas : varchar(50)

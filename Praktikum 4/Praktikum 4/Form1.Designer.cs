@@ -49,6 +49,7 @@
             this.search_buku = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnPinjam = new System.Windows.Forms.Button();
+            this.btnDataPinjam = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_id
@@ -217,19 +218,30 @@
             // 
             // btnPinjam
             // 
-            this.btnPinjam.Location = new System.Drawing.Point(99, 253);
+            this.btnPinjam.Location = new System.Drawing.Point(180, 253);
             this.btnPinjam.Name = "btnPinjam";
-            this.btnPinjam.Size = new System.Drawing.Size(156, 41);
+            this.btnPinjam.Size = new System.Drawing.Size(75, 41);
             this.btnPinjam.TabIndex = 16;
-            this.btnPinjam.Text = "Peminjaman";
+            this.btnPinjam.Text = "Form Peminjaman";
             this.btnPinjam.UseVisualStyleBackColor = true;
             this.btnPinjam.Click += new System.EventHandler(this.btnPinjam_Click);
+            // 
+            // btnDataPinjam
+            // 
+            this.btnDataPinjam.Location = new System.Drawing.Point(99, 253);
+            this.btnDataPinjam.Name = "btnDataPinjam";
+            this.btnDataPinjam.Size = new System.Drawing.Size(75, 41);
+            this.btnDataPinjam.TabIndex = 17;
+            this.btnDataPinjam.Text = "Data Peminjaman";
+            this.btnDataPinjam.UseVisualStyleBackColor = true;
+            this.btnDataPinjam.Click += new System.EventHandler(this.btnDataPinjam_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(566, 302);
+            this.Controls.Add(this.btnDataPinjam);
             this.Controls.Add(this.btnPinjam);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.text_search);
@@ -278,6 +290,7 @@
         private System.Windows.Forms.Label search_buku;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnPinjam;
+        private System.Windows.Forms.Button btnDataPinjam;
     }
 }
 
