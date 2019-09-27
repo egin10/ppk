@@ -225,5 +225,11 @@ namespace Praktikum_4
                 databaseConnection.Close();
             }
         }
+
+        private void btnPinjam_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2();
+            frm2.Show();
+        }
     }
 }
