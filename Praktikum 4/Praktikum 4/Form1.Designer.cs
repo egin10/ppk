@@ -128,7 +128,7 @@
             // 
             // button_Tambah
             // 
-            this.button_Tambah.Location = new System.Drawing.Point(99, 195);
+            this.button_Tambah.Location = new System.Drawing.Point(22, 195);
             this.button_Tambah.Name = "button_Tambah";
             this.button_Tambah.Size = new System.Drawing.Size(75, 23);
             this.button_Tambah.TabIndex = 9;
@@ -138,7 +138,7 @@
             // 
             // button_Update
             // 
-            this.button_Update.Location = new System.Drawing.Point(99, 224);
+            this.button_Update.Location = new System.Drawing.Point(103, 195);
             this.button_Update.Name = "button_Update";
             this.button_Update.Size = new System.Drawing.Size(75, 23);
             this.button_Update.TabIndex = 10;
@@ -148,7 +148,7 @@
             // 
             // button_Refresh
             // 
-            this.button_Refresh.Location = new System.Drawing.Point(180, 224);
+            this.button_Refresh.Location = new System.Drawing.Point(103, 224);
             this.button_Refresh.Name = "button_Refresh";
             this.button_Refresh.Size = new System.Drawing.Size(75, 23);
             this.button_Refresh.TabIndex = 11;
@@ -164,6 +164,7 @@
             this.Pengarang,
             this.Jumlah});
             this.listBuku.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listBuku.FullRowSelect = true;
             this.listBuku.Location = new System.Drawing.Point(273, 0);
             this.listBuku.Name = "listBuku";
             this.listBuku.Size = new System.Drawing.Size(293, 302);
@@ -218,9 +219,9 @@
             // 
             // btnPinjam
             // 
-            this.btnPinjam.Location = new System.Drawing.Point(180, 253);
+            this.btnPinjam.Location = new System.Drawing.Point(135, 253);
             this.btnPinjam.Name = "btnPinjam";
-            this.btnPinjam.Size = new System.Drawing.Size(75, 41);
+            this.btnPinjam.Size = new System.Drawing.Size(120, 41);
             this.btnPinjam.TabIndex = 16;
             this.btnPinjam.Text = "Form Peminjaman";
             this.btnPinjam.UseVisualStyleBackColor = true;
@@ -228,9 +229,9 @@
             // 
             // btnDataPinjam
             // 
-            this.btnDataPinjam.Location = new System.Drawing.Point(99, 253);
+            this.btnDataPinjam.Location = new System.Drawing.Point(23, 253);
             this.btnDataPinjam.Name = "btnDataPinjam";
-            this.btnDataPinjam.Size = new System.Drawing.Size(75, 41);
+            this.btnDataPinjam.Size = new System.Drawing.Size(106, 41);
             this.btnDataPinjam.TabIndex = 17;
             this.btnDataPinjam.Text = "Data Peminjaman";
             this.btnDataPinjam.UseVisualStyleBackColor = true;

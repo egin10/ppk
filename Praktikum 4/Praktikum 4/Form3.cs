@@ -73,6 +73,11 @@ namespace Praktikum_4
                         n++;
                     }
                     reader.Close();
+
+                    for (int i = 0; i < listView1.Columns.Count; i++)
+                    {
+                        listView1.Columns[i].Width = -2;
+                    }
                 }
                 else
                 {

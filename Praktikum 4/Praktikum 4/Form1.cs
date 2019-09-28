@@ -136,6 +136,11 @@ namespace Praktikum_4
                         listBuku.Items.Add(listViewItem);
                     }
                     reader.Close();
+
+                    for (int i = 0; i < listBuku.Columns.Count; i++)
+                    {
+                        listBuku.Columns[i].Width = -2;
+                    }
                 }
                 else
                 {
