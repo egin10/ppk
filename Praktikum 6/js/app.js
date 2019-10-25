@@ -26,9 +26,6 @@ let Application = {
 		let tbdy = $("#table-detailMhs tbody");
 		const dataMhs = dataObject.mhs.find(mhs => mhs.nim == nim);
 		const appendDetail = '<tr id="detail"><td>'+dataMhs.nim+'</td><td>'+dataMhs.nama+'</td><td>'+dataMhs.jurusan+'</td><td>'+dataMhs.fakultas+'</td><td>'+dataMhs.alamat+'</td><td>'+dataMhs.noHP+'</td></tr>';
-		// && tbdy.children().length == 0
-		console.log(dataMhs);
-		
 		$('#table-detailMhs').append(appendDetail);
 	},
 	clearDetailMhs: function(){
