@@ -5,8 +5,14 @@ velocity = 1,
 numBush = 4,
 bush = [],
 bushImage,
+numTree = 2,
+tree = [],
+treeImage,
 score = 0,
 life = 3,
+heartImage,
+btnPauseImage,
+btnRestartImage,
 gameOver = "",
 zombie = [],
 numZombie = 3,
@@ -77,6 +83,10 @@ knight = sprite({
 for (i = 0; i < numBush; i++) {
     spawnBush();
 }
+//tree
+for (i = 0; i < numTree; i++) {
+    spawnTree();
+}
 //zombie
 for (i = 0; i < numZombie; i++) {
     spawnZombie();
@@ -87,13 +97,15 @@ knightImage.src = "images/character/knight_run.png";
 function gameLoop() {
     window.requestAnimationFrame(gameLoop);
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
-    knight.update();
-    knight.x -= level * velocity;
-    if (knight.x < -128) {
-        knight.x = canvas.width + Math.round(Math.random() *
-        canvas.width);
+    //tree
+    for (i = 0; i < tree.length; i++) {
+        tree[i].update();
+        tree[i].x += level * velocity / 2;
+        tree[i].render();
+        if (tree[i].x > canvas.width + 65) {
+        tree[i].x = -80 - Math.floor(Math.random() * 1 + 1);
+        }
     }
-    knight.render();
     //bush
     for (i = 0; i < bush.length; i++) {
         bush[i].update();
@@ -103,6 +115,14 @@ function gameLoop() {
         bush[i].x = -80 - Math.floor(Math.random() * 3 + 1);
         }
     }
+    //knight
+    knight.update();
+    knight.x -= level * velocity;
+    if (knight.x < -128) {
+        knight.x = canvas.width + Math.round(Math.random() *
+        canvas.width);
+    }
+    knight.render();
     //hud
     drawHud();
     //zombie
@@ -163,6 +183,37 @@ function spawnBush() {
     bushImage.src = "images/bush/bush" + bushIndex + ".png";
 }
 
+function spawnTree() {
+    var treeIndex,
+    treeImage;
+    treeImage = new Image();
+    treeIndex = tree.length;
+    tree[treeIndex] = sprite({
+    context: canvas.getContext("2d"),
+    img: treeImage,
+    w: 0,
+    h: 0,
+    x: 0,
+    y: 0,
+    numberOfFrame: 1,
+    tickPerFrame: 1
+    });
+    tree[treeIndex].x = 0 + Math.random() * (canvas.width -
+    tree[treeIndex].getFrameWidth() * tree[treeIndex].scaleRatio);
+    if (treeIndex == 0) {
+    tree[treeIndex].w = 282;
+    tree[treeIndex].h = 301;
+    tree[treeIndex].y = canvas.height - 299;
+    }
+    if (treeIndex == 1) {
+    tree[treeIndex].w = 282;
+    tree[treeIndex].h = 301;
+    tree[treeIndex].y = canvas.height - 299;
+    }
+    tree[treeIndex].scaleRatio = Math.random() * 0.5 + 0.5;
+    treeImage.src = "images/tree/tree" + treeIndex + ".png";
+}
+
 function spawnZombie() {
     var zombieIndex,
     zombieImage;
@@ -203,8 +254,31 @@ function drawHud() {
     context.font = "bold 20px Consolas";
     context.textAlign = "start";
     context.fillStyle = "white";
-    //context.fillText("Life: " + life, 30, 40);
-    context.fillText("Life: "+life, 30, 40);
+    context.fillText("Life: " + life, 30, 40);
+    heartImage = new Image();
+    heartImage.src = "images/heart/heart.png";
+    for(i = 0; i < life; i++){
+        if(i == 0){
+            context.drawImage(heartImage, 105, 25);
+        }
+        if(i == 1){
+            context.drawImage(heartImage, 150, 25);
+        }
+        if(i == 2){
+            context.drawImage(heartImage, 195, 25);
+        }
+    }
+    //button pause
+    btnPauseImage = new Image();
+    btnPauseImage.src = "images/button/btnPause.png";
+    context.drawImage(btnPauseImage, canvas.width * 0.5 - 32, 25);
+    //button restart
+    if(life == 0){
+        btnRestartImage = new Image();
+        btnRestartImage.src = "images/button/btnRestart.png";
+        context.drawImage(btnRestartImage, canvas.width * 0.5 - 60, canvas.height * 0.5);
+        gameOver = "GAME OVER";
+    }
     //gameover
     context.font = "bold 50px Consolas";
     context.textAlign = "center";
@@ -212,3 +286,17 @@ function drawHud() {
     context.fillText(gameOver, context.canvas.width / 2,
     context.canvas.height / 2 - 32);
 }
+
+//Handler Click
+canvas.addEventListener('click', (e) => {
+    const pos = {
+        x: e.clientX,
+        y: e.clientY
+    };
+    // console.log(pos);
+    // console.log(btnPauseImage.x);
+    if(pos.x == knight.x){
+        alert("Hit Knight!");
+    }
+    console.log(knight.x, pos.x);
+});
